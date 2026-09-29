@@ -51,11 +51,17 @@ function mapItem(item) {
  * @returns {Promise<any>}
  */
 async function requestJson(url, errorPrefix) {
-    // TODO 1: Implementare la fetch e restituire il JSON parsato
-    // Il parametro url contiene un già un endpoint completo e bisogna solo fare la chiamata
-    // Poi in caso di errore rella risposta, mandare un messaggio di errore che contenga il prefisso errorPrefix e l'eventuale messaggio di errore restituito dalla fetch
-    // Infine restituisci i dati parsati come oggetto, senza manipolarli o trasformarli
-    // Controlla sempre anche errori di rete o altri errori imprevisti con un catch e restituisci un messaggio di errore coerente con il prefisso
+    try {
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            throw new Error(`${errorPrefix}: HTTP ${response.status}`);
+        }
+
+        return await response.json();
+    } catch (error) {
+        throw new Error(`${errorPrefix}: ${error.message}`);
+    }
 }
 
 /**

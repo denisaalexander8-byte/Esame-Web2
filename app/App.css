@@ -175,20 +175,18 @@ button {
     transition: transform 160ms ease, background 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
-/* TODO 2: Mettere a posto la navbar attiva e hover
-    Per quanto riguarda entrambe:
-    - devono avere un leggero spostamento verso l'alto
-    - devono avere colore del testo chiaro (--text)
-    - devono avere un colore del bordo evidente (--accent-2)
-    Per quanto riguarda l'attiva:
-    - deve avare una leggera obmra sfocata e verso il basso con colore arancione.
-    - deve avere un colore del bordo arancione
-*/
+/* Hover e link attivo: leggero spostamento verso l'alto, testo chiaro, bordo evidente */
 .nav-link:hover,
 .nav-link.active {
+    transform: translateY(-2px);
+    color: var(--text);
+    border-color: var(--accent-2);
 }
 
+/* Link attivo: ombra sfocata arancione verso il basso e bordo arancione */
 .nav-link.active {
+    border-color: var(--accent);
+    box-shadow: 0 8px 18px rgba(255, 138, 52, 0.35);
 }
 
 .hero {
@@ -619,27 +617,24 @@ a:focus-visible {
     min-width: 620px;
 }
 
-/* TODO 2: Sistemare la tabella dei record.
-    - Entrambi i tipi di riga (header e normale) devono avere un padding generoso e un bordo inferiore sottile.
-    - Le intestazioni devono avere uno sfondo leggermente più scuro del pannello (un quasi nero) e un colore del testo che risalti (magari accent-2).
-*/
-
+/* Righe di intestazione e normali: padding generoso e bordo inferiore sottile */
 .records-table th,
 .records-table td {
-
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
     text-align: left;
     vertical-align: top;
 }
 
+/* Intestazioni: sfondo quasi nero e testo in evidenza */
 .records-table th {
-
+    background: rgba(2, 6, 10, 0.85);
+    color: var(--accent-2);
     font-size: 0.82rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     top: 0;
 }
-
-
 
 .records-row:hover td {
     background: rgba(255, 255, 255, 0.02);
