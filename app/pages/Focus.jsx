@@ -19,7 +19,7 @@ function Focus() {
   const [story, setStory] = useState(null);
   const [comments, setComments] = useState([]);
   const [commentsStatus, setCommentsStatus] = useState('idle');
-
+  
   useEffect(() => {
     if (!storyId) {
       return;
@@ -50,7 +50,7 @@ function Focus() {
           setCommentsStatus('empty');
           return;
         }
-
+       
         setCommentsStatus('loading');
         const firstLevelComments = await getCommentChildren(result);
 
@@ -62,7 +62,7 @@ function Focus() {
           setCommentsStatus('empty');
           return;
         }
-
+      
         setComments(firstLevelComments);
         setCommentsStatus('ready');
       } catch (error) {
