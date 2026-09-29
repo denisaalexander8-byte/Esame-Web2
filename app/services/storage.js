@@ -1,5 +1,3 @@
-// storage.js - persistenza archivio locale
-
 const STORAGE_KEYS = {
     READ_LATER: "signal_atlas_read_later_ids",
 };

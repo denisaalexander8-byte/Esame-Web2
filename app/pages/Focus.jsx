@@ -23,7 +23,7 @@ function Focus() {
   useEffect(() => {
     if (!storyId) {
       return;
-    }
+    } 
 
     let cancelled = false;
 

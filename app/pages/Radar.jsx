@@ -15,7 +15,7 @@ function Radar() {
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    let cancelled = false;
+    let cancelled = false; 
 
     async function loadTopStories() {
       setStatus('loading');
@@ -26,8 +26,8 @@ function Radar() {
         if (cancelled) {
           return;
         }
-
-        if (!result.length) {
+    
+        if (!result.length) { 
           setStatus('empty');
           return;
         }

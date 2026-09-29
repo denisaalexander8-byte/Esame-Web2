@@ -98,7 +98,7 @@ Nel caso può essere utile, usare il numero storia: `48195009` per testare le fu
 
 3. **CSS per la tabella dei record [app/App.css](app/App.css)**\
    Completa le regole CSS per la tabella dei record della pagina Autori, aggiungendo padding alle celle e mettendo a posto le intestazioni e le righe in modo che siano più leggibili e visivamente distinte.
-
+  
 
 ### 3. DEBUGGING LOGICO
 

@@ -182,7 +182,6 @@ button {
     color: var(--text);
     border-color: var(--accent-2);
 }
-
 /* Link attivo: ombra sfocata arancione verso il basso e bordo arancione */
 .nav-link.active {
     border-color: var(--accent);
@@ -635,7 +634,6 @@ a:focus-visible {
     text-transform: uppercase;
     top: 0;
 }
-
 .records-row:hover td {
     background: rgba(255, 255, 255, 0.02);
 }
