@@ -86,7 +86,7 @@ function Radar() {
                 <option value="36">36 storie</option>
               </select>
             </div>
-          </div>
+          </div> 
           <button
             id="top-refresh-button"
             className=""
