@@ -16,7 +16,7 @@ function Radar() {
 
   useEffect(() => {
     let cancelled = false; 
-
+    
     async function loadTopStories() {
       setStatus('loading');
 
