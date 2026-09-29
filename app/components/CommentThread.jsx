@@ -31,9 +31,7 @@ function CommentNode({ comment, depth = 0 }) {
     buttonLabel = 'Carico risposte...';
   } else if (loaded && expanded) {
     buttonLabel = 'Chiudi risposte';
-    
-  } 
-
+  }
   return (
     <article className={`comment-card comment-card--depth-${Math.min(depth, 5)}`}>
       <div className="comment-card__meta">
