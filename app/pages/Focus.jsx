@@ -112,7 +112,7 @@ function Focus() {
             </p>
           </div>
         </div>
-
+         
         <div className="controls-bar">
           <div className="controls-group">
             <div className="field">
