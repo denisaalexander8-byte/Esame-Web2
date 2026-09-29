@@ -6,7 +6,7 @@ const PAGES = [
   { id: 'focus', label: 'Focus', path: '/focus' },
   { id: 'profile', label: 'Autori', path: '/profile' },
   { id: 'archive', label: 'Archivio', path: '/archive' },
-];
+]; 
 
 /**
  * Header della piattaforma con navigazione principale.
